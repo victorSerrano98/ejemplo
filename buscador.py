@@ -10,11 +10,11 @@ import spacy
 import requests
 
 #CARGA DE MODELO AJUSTADO
-modelname = 'twmkn9/bert-base-uncased-squad2'
-model = BertForQuestionAnswering.from_pretrained(modelname)
-tokenizer = AutoTokenizer.from_pretrained(modelname)
-# tokenizer = AutoTokenizer.from_pretrained("graviraja/covidbert_squad")
-# model = AutoModelForQuestionAnswering.from_pretrained("graviraja/covidbert_squad")
+# modelname = 'twmkn9/bert-base-uncased-squad2'
+# model = BertForQuestionAnswering.from_pretrained(modelname)
+# tokenizer = AutoTokenizer.from_pretrained(modelname)
+tokenizer = AutoTokenizer.from_pretrained("graviraja/covidbert_squad")
+model = AutoModelForQuestionAnswering.from_pretrained("graviraja/covidbert_squad")
 # config = BertConfig.from_json_file('C:/Users/Alexis/PycharmProjects/ModeloBERT/model/config.json')
 # tokenizer = AutoTokenizer.from_pretrained("C:/Users/Alexis/PycharmProjects/ModeloBERT/model/tokenizer/")
 # model = AutoModelForQuestionAnswering.from_pretrained("C:/Users/Alexis/PycharmProjects/ModeloBERT/model")
