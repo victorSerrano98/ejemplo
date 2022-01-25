@@ -150,7 +150,7 @@ def respuesta(question,text):
                                            return_tensors='pt')  # Return pytorch tensors.
             #nlp({'question': question, 'context': res["abstract"]})
             # print(res["title"])
-            if x > 0.70:
+            if x > 0.00:
                 cont = cont + 1
 
                 titulo = res["title"]
