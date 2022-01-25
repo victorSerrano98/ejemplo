@@ -47,6 +47,7 @@ def main():
         print(traducido)
         query = buscador.spa(traducido)
         print(query)
+        print("*********************")
         consulta = buscador.consultaAPI(query, 1)
         print(consulta)
         output_dict = [x for x in consulta["data"] if x['abstract'] != None]
