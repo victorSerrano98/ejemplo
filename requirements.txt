@@ -7,3 +7,4 @@ sentencepiece
 googletrans==3.1.0a0
 pyvespa
 rank_bm25
+python -m spacy download en_core_web_sm
